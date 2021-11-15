@@ -1,6 +1,9 @@
+from typing import List
+
+
 class No1(object):
 
-    def twoSum_sort(self, nums, target):
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         """
         :type nums: List[int]
         :type target: int
@@ -22,9 +25,9 @@ class No1(object):
         second = nums.index(sorted_nums[high])
         if first == second:
             second = nums.index(sorted_nums[high], first + 1, len(nums))
-        return first, second
+        return [first, second]
 
-    def twoSum_hashtable(self, nums, target):
+    def twoSum_hashtable(self, nums: List[int], target: int) -> List[int]:
         """
         :type nums: List[int]
         :type target: int
