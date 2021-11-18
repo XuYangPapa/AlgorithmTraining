@@ -1,3 +1,6 @@
+"""
+20.有效的括号
+"""
 class No20:
     def isValid(self, s: str) -> bool:
         if len(s) % 2 == 1:
