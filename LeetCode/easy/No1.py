@@ -1,11 +1,10 @@
 """
-1.两数之和
+1. 两数之和
 """
 from typing import List
 
 
-class No1(object):
-
+class Solution(object):
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         """
         :type nums: List[int]
@@ -47,6 +46,6 @@ class No1(object):
 
 
 if __name__ == '__main__':
-    no1 = No1()
+    solution = Solution()
     nums = [3, 3]
-    print(no1.twoSum_hashtable(nums, 6))
+    print(solution.twoSum_hashtable(nums, 6))

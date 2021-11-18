@@ -1,7 +1,9 @@
 """
-20.有效的括号
+20. 有效的括号
 """
-class No20:
+
+
+class Solution:
     def isValid(self, s: str) -> bool:
         if len(s) % 2 == 1:
             return False
@@ -22,5 +24,5 @@ class No20:
 
 
 if __name__ == '__main__':
-    no20 = No20()
-    print(no20.isValid('{}[]()[(]]'))
+    solution = Solution()
+    print(solution.isValid('{}[]()[(]]'))

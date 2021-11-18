@@ -1,10 +1,10 @@
 """
-26.删除有序数组中的重复项
+26. 删除有序数组中的重复项
 """
 from typing import List
 
 
-class No26:
+class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         """
         不需要删除元素，只需要将重复的元素移动至列表的右侧，删除元素的话耗时较高。
@@ -23,8 +23,8 @@ class No26:
 
 
 if __name__ == '__main__':
-    no26 = No26()
+    solution = Solution()
     nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-    size = no26.removeDuplicates(nums)
+    size = solution.removeDuplicates(nums)
     for i in range(size):
         print(nums[i])

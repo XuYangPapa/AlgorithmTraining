@@ -1,6 +1,8 @@
 """
-21.合并两个有序链表
+21. 合并两个有序链表
 """
+
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -8,7 +10,7 @@ class ListNode:
         self.next = next
 
 
-class No21:
+class Solution:
     def mergeTwoLists_iteration(self, l1: ListNode, l2: ListNode) -> ListNode:
         """
         利用一个虚拟的头节点，同时循环两个链表，将值小的接在当前链表后面。
@@ -48,7 +50,7 @@ class No21:
 
 
 if __name__ == '__main__':
-    no21 = No21()
+    solution = Solution()
     x1 = ListNode(1)
     x2 = ListNode(2)
     x3 = ListNode(4)
@@ -59,7 +61,7 @@ if __name__ == '__main__':
     y3 = ListNode(4)
     y1.next = y2
     y2.next = y3
-    merge = no21.mergeTwoLists_recursion(x1, y1)
+    merge = solution.mergeTwoLists_recursion(x1, y1)
     while merge:
         print(merge.val)
         merge = merge.next

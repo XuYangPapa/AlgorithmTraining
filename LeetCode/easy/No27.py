@@ -1,10 +1,10 @@
 """
-27.移除元素
+27. 移除元素
 """
 from typing import List
 
 
-class No27:
+class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         """
         前后双指针遍历
@@ -22,8 +22,8 @@ class No27:
 
 
 if __name__ == '__main__':
-    no27 = No27()
+    solution = Solution()
     nums = [0, 1, 2, 2, 3, 0, 4, 2]
-    size = no27.removeElement(nums, 2)
+    size = solution.removeElement(nums, 2)
     for i in range(size):
         print(nums[i])

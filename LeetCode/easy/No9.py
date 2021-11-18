@@ -1,8 +1,9 @@
 """
-9.回文数
+9. 回文数
 """
-class No9:
 
+
+class Solution:
     def isPalindrome_str(self, x: int) -> bool:
         if x < 0:
             return False
@@ -38,5 +39,5 @@ class No9:
 
 
 if __name__ == '__main__':
-    no9 = No9()
-    print(no9.isPalindrome(12181))
+    solution = Solution()
+    print(solution.isPalindrome(12181))
